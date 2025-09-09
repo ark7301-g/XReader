@@ -1,0 +1,97 @@
+name: xreader
+description: "XReader - 极简电子书阅读器"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # 状态管理
+  riverpod: ^2.4.9
+  flutter_riverpod: ^2.4.9
+  
+  # 数据库
+  sqflite: ^2.3.0
+  sqflite_common_ffi: ^2.3.0
+  sqlite3_flutter_libs: ^0.5.15
+  
+  # 文件处理
+  path_provider: ^2.1.1
+  file_picker: ^8.0.0
+  
+  # 电子书解析
+  epubx: ^4.0.0
+  archive: ^3.6.1
+  xml: ^6.3.0
+  # syncfusion_flutter_pdfviewer: ^23.2.7  # 暂时注释掉，存在兼容性问题
+  
+  # UI组件
+  flutter_screenutil: ^5.9.0
+  google_fonts: ^6.1.0
+  
+  # 动画
+  animations: ^2.0.8
+  
+  # 基础图标
+  cupertino_icons: ^1.0.8
+  
+  # 代码生成
+  json_annotation: ^4.8.1
+  
+  # 本地存储
+  shared_preferences: ^2.2.2
+  path: ^1.9.1
+  
+  # 缓存
+  cached_memory_image: ^1.5.0
+  
+  # 序列化
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.7
+  # isar_generator: ^3.1.0+1  # 暂时注释掉
+  flutter_lints: ^3.0.1
+
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  
+  # 应用图标
+  # TODO: 添加应用图标文件
+  # assets:
+  #   - assets/icons/
+  #   - assets/images/
+  
+  # 字体配置 (暂时注释掉，缺少字体文件)
+  # fonts:
+  #   - family: XReader
+  #     fonts:
+  #       - asset: assets/fonts/SourceSerif4-Regular.ttf
+  #       - asset: assets/fonts/SourceSerif4-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/SourceSerif4-Italic.ttf
+  #         style: italic
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+    icon_size: 48
